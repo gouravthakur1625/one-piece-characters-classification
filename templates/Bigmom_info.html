@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Big Mom</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+    body{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-right: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/big mom.jpg' )}}" alt="User Image" style="width:600px;height:900px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Charlotte Linlin</b></h2>
+                    <h3>Father:- Unknown</h3>
+                    <h3>Bounty:- 4.38 Billion</h3>
+                    <h3>Nick Name:- Big Mom</h3>
+                    <h3>Devil Fruit:- Soru Soru no Mi (Soul-Soul Fruit)</h3>
+                    <h3>Power:- Armament Haki, Observation Haki, Color of Supreme King</h3>
+                    <h3>Weapon:- Napoleon, Prometheus,Zeus</h3>
+                    <h3>Position:- Emperor of sea (Younko)(Former), Captain of Big Mom Pirates</h3>
+					
+					<p style="color: white;"><b>Charlotte Linlin,[18] better known as Big Mom,[19] is the captain of the Big Mom Pirates and was formerly one of the Four Emperors ruling over the New World, as the only female member of that group. She is also the matriarch of the very large Charlotte Family, whose many children make up the infrastructure of her crew. She is also the creator of the unique race of creatures known as Homies, who mainly inhabit all of Totto Land, and happily serve her. Big Mom possesses three special homies, Napoleon, Prometheus, and Zeus, but unhappy with Zeus' continued failures, Big Mom decided to disown and replace him with a new Homie named Hera.
+
+                        Big Mom rules over Totto Land as its queen,[6] seeking to form it into a utopia where all the world's races can live together in peace without discrimination or segregation. In her childhood, Linlin was raised in the Sheep's House under Carmel, whose Devil Fruit power she eventually inherited, before co-founding her own pirate crew with Streusen following Carmel's death.
+                        
+                        Big Mom was also part of the legendary Rocks Pirates as one of its core members. After clashing against fellow Emperor Kaidou (another ex-member of Rocks' crew), she formed a Alliance with Kaidou and the Beasts Pirates with the intention of conquering the world. However, this never came to fruition as their alliance would go on to be defeated by the Ninja-Pirate-Mink-Samurai Alliance. Following her loss in Wano Country to Eustass Kid and Trafalgar Law, the World Economy News Paper released a new listing of Four Emperors, with her not included among them.
+                        
+                        Big Mom was the last of the Four Emperors to be named; her epithet was first revealed after the Summit War of Marineford by Eustass Kid and her real name was revealed by Pappag on Fish-Man Island. She is the primary antagonist of the Whole Cake Island Arc and the Whole Cake Island Saga as a whole, the secondary antagonist of the second half of the Wano Country Arc, and one of the central antagonists of the Wano Country Saga.</b></p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

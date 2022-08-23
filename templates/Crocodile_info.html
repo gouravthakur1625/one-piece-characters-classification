@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Crocodile</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            font-family: "Brush Script MT", cursive;
+        }
+    body{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/dofcroc.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/crocodile.jpg' )}}" alt="User Image" style="width:500px;height:750px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Crocodile</b></h2>
+                    <h3>Bounty:- Unknown</h3>
+                    <h3>Nick Name:- "Desert King" Sir Crocodile</h3>
+                    <h3>Devil Fruit:- Suna Suna no Mi (Sand Sand Fruit)</h3>
+                    <h3>Position:- Cross Guild, Former Seven Warlords</h3>
+					
+					<p><b>"Desert King" Sir Crocodile[3][13] is the former president of the mysterious crime syndicate Baroque Works,[14] formerly operating under the codename "Mr. 0", with Nico Robin, formerly known as "Miss All Sunday", operating as his Vice-President and partner. He was the primary antagonist of the Arabasta Arc, central antagonist of the Arabasta Saga and the supporting character of the Impel Down Arc in the Summit War Saga.
+
+                        He is one of the longest running and most noteworthy primary adversaries of the series, as he was the first enemy to hand Luffy a complete and utter defeat. He was originally introduced as one of the Seven Warlords of the Sea[6] but was later stripped of his title after attempting to take control of the desert kingdom Arabasta.[4]
+                        
+                        Thanks to Luffy, he managed to escape from Impel Down[15] and went to Marineford to participate in the war.[16] After the war, he and his subordinate Daz Bonez decided to head out to the New World,[17] where Crocodile would eventually join forces with ex-Warlord and fellow Impel Down escapee Buggy as a member of the Cross Guild.[18]</b></p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

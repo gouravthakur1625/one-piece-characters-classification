@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Usopp</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/usopp.jpg' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h3 font-family:'Courier New';><b>Full Name:- Usopp</b></h2>
+                        <h3>Father:-  Yasopp</h3>
+                        <h3>Bounty:- 200 Million</h3>
+                        <h3>Nick Name:- "God" Usopp</h3>
+                        <h3>Devil Fruit:- None</h3>
+                        <h3>Power:- Observation Haki</h3>
+                        <h3>Position:- Straw Hat's Sniper</h3>
+                        <p style = "color: white;"><b>"God" Usopp is the sniper of the Straw Hat Pirates. He is the fourth member of the crew and the third to join, doing so at the end of the Syrup Village Arc. Although he left the crew during the Water 7 Arc, he rejoined at the end of the Post-Enies Lobby Arc.[17]
+
+                            Usopp is the son of Yasopp and Banchina. He was born and raised in Syrup Village, serving as "captain" of the Usopp Pirates and being Kaya's close friend. After working with the Straw Hats to defeat Kuro and the Black Cat Pirates, he was invited to join the crew. Despite his usual cowardice, Usopp dreams of becoming a brave warrior of the sea just like his father and lives every day in pursuit of living up to this dream.
+                            
+                            He first gain a bounty of Beli.png30,000,000 under his Sogeking Persona after the incident at Enies Lobby and currently has a bounty of Beli.png200,000,000.[15]</b></p>                   
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

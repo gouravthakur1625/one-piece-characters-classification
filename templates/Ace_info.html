@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Ace</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+    body{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/ace_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/ace.jpg' )}}" alt="User Image" style="width:280px;height:392px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Portgas D. Ace</b></h2>
+                    <h3>Father:- Gol D. Roger (Pirate King)</h3>
+                    <h3>Bounty:- 550 Million</h3>
+                    <h3>Nick Name:-  "Fire Fist" Ace</h3>
+                    <h3>Devil Fruit:- Mera Mera no Mi</h3>
+                    <h3>Power:- Armament Haki, Observation Haki, Color of Supreme King</h3>
+                
+                    <h3>Position:- 2nd Division Commander of Whitebeard Pirates</h3>
+					
+					<p style="color: white;"><b>Portgas D. Ace, born as Gol D. Ace and nicknamed "Fire Fist" Ace, was the sworn older brother of Luffy and Sabo, and the biological son of the late Pirate King, Gol D. Roger, and Portgas D. Rouge. Ace was adopted by Monkey D. Garp, as had been requested by Roger before his execution. Ace was the 2nd division commander of the Whitebeard Pirates and one-time captain of the Spade Pirates.
+
+                        Hunted by the World Government for his lineage, Ace was captured and sentenced to death, which resulted in the Summit War of Marineford, an all-out clash of powers; Whitebeard's forces against the Marines and Seven Warlords. Ace was freed, but he sacrificed his life to protect Luffy from Marine admiral Akainu.
+                        
+                        Ace was first shown during the Drum Island Arc, but only got formally introduced in the Arabasta Arc, where he acts as a brief ally of the Straw Hat Pirates. He is a central figure during the whole Summit War Saga. He is also the protagonist of Ace's Great Blackbeard Search Cover Page Serial.
+                        
+                        Ace's death ultimately proved to be the catalyst leading to Luffy training for two years to become strong enough to protect his friends, paving the way for the second half of the series. </b></p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

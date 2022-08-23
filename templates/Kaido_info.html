@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Kaido</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/kaido_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/kaido.png' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Kaidou</b></h2>
+                        <h3>Bounty:- 4.61 Billion</h3>
+                        <h3>Nick Name:-  Strongest Creature, Kaidou of the Beasts</h3>
+                        <h3>Devil Fruit:- Uo Uo no Mi, Model: Seiryu (Fish-Fish Fruit, Model Azure Dragon)</h3>
+                        <h3>Power:- Advance Armament Haki,Advance Observation Haki, Advance Conqueror's Haki</h3>
+                    
+                        <h3>Position:- Emperor (former),  Governor-General of the Beasts Pirates</h3>
+					
+					<p style="color: white;"><b>Kaidou of the Beasts,[8][18][15][10] renowned as the world's "Strongest Creature",[19][11] is the Governor-General of the Beasts Pirates[6][15] and was formerly one of the Four Emperors ruling over the New World.[5] He is also the father of Yamato.[20][21][22]
+
+                        Once a promising child soldier at the service of the Vodka Kingdom decades ago, Kaidou was drafted against his will by the Marines but managed to escape and start a career in piracy. He was invited by Edward Newgate to join the legendary Rocks Pirates as an apprentice,[4] where he met and befriended Charlotte Linlin. During the God Valley Incident when the Rocks Pirates met their downfall, Linlin provided Kaidou with the rare Mythical Zoan fruit, the Uo Uo no Mi, Model: Seiryu. He then went on to form his own crew and build it up into a powerful military force determined to challenge the World Government.
+                        
+                        After being invited to Wano Country by Kurozumi Higurashi, Kaidou joined forces with Wano Country's shogun, Kurozumi Orochi,[23][24] and occupied Onigashima as his base.[9] After a failed attempt from Kozuki Oden and the Nine Red Scabbards to overthrow him, he continued to accrue military might in Wano Country for 20 years before deciding to dispose of Orochi and proceed with his plan for the New Onigashima Project.[25] The plan never came to fruition, however, as Onigashima was raided by the Ninja-Pirate-Mink-Samurai Alliance on that very same night and the Beasts Pirates were ultimately defeated. Following Kaidou's defeat at Luffy's hands, the World Economy News Paper released a new listing of Four Emperors, with Kaidou no longer being included among them.[26]
+                        
+                        Kaidou was first referred to by Monkey D. Garp in the Post-Enies Lobby Arc when he revealed the existence of the Four Emperors,[5] and was then first directly mentioned by Gecko Moria in the Thriller Bark Arc,[27] with his status as one of the Four Emperors revealed after the Straw Hat Pirates defeated Moria.[28] Thus, Kaidou is the third Emperor mentioned by name and the last to debut.[1] Before he debuted in person, his voice was heard in a flashback that Kozuki Momonosuke had when first disembarking on Dressrosa.[29][30] He is the primary antagonist of the Wano Country Arc and one of the central antagonists of the Wano Country Saga.</b></p>
+               
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

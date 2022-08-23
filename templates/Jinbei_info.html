@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Jinbe</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/jinbei.jpg' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    
+                    <h3 font-family:'Courier New';><b>Full Name:- Jinbe</b></h2>
+                        <h3>Bounty:- 438 Million</h3>
+                        <h3>Nick Name:-  Knight of the Sea</h3>
+                        <h3>Devil Fruit:- None</h3>
+                        <h3>Power:-  Fish-Man Karate</h3>
+                    
+                        <h3>Position:- Strawhat's helmsman, Former Warlord</h3>
+					
+					<p style="color: white;"><b>"Knight of the Sea" Jinbe[1] is the helmsman of the Straw Hat Pirates. He is the tenth member of the crew and the ninth to join, doing so during the Wano Country Arc.[18]
+
+                        Jinbe is a whale shark fish-man and a powerful master of Fish-Man Karate. His dream is to fulfill his former captain Fisher Tiger's dying wish of coexistence and equality between humans and fish-men. He was a member of the Sun Pirates, eventually becoming its second captain after the death of their original captain, Tiger.[8] He eventually became one of the Seven Warlords of the Sea, though he resigned during the Summit War of Marineford.[4][8]
+                        
+                        Prior to and amidst said war, Jinbe befriended Monkey D. Luffy, and two years later allied with him and his crew to prevent the New Fish-Man Pirates' coup d'état against the Ryugu Kingdom's Neptune Royal Family. Luffy thereafter invited him to join the Straw Hat Pirates, but Jinbe held it off until severing ties with Big Mom during the Whole Cake Island Arc. After staying behind in Totto Land to protect the Sun Pirates from Big Mom's wrath, Jinbe returned to the Straw Hats during the Wano Country Arc, officially announcing his status as a member of the crew.[18]
+                        
+                        He first gained a bounty of Beli 76,000,000 due to him being a member of the Sun Pirates. It was later increased to Beli 250,000,000 after Jinbe became the new captain of the Sun Pirates before it was frozen after he joined the Seven Warlords. Jinbe resigned his position as a Warlord at the Summit War of Marineford with his bounty being reinstated and currently being Beli 438,000,000.</b></p>
+               
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

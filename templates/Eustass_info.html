@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Kid</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/kid.jpg' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Eustass Kid</b></h2>
+                        <h3>Bounty:- 3 Billion</h3>
+                        <h3>Nick Name:- Captain Kid</h3>
+                        <h3>Devil Fruit:- Jiki Jiki no Mi (Magnet-Magnet Fruit)</h3>
+                        <h3>Power:- Armament Haki, Observation Haki, Color of Supreme King</h3>
+                        <h3>Position:- Pirate Captain</h3>
+					
+					<p style="color: white;"><b>Eustass "Captain" Kid[8] is a notorious pirate from South Blue and the captain of the Kid Pirates.[1] He is one of twelve pirates who are referred to as the "Worst Generation".[9]
+
+                        During the timeskip, Kid lost one of his arms in a confrontation against one of the Four Emperors, Shanks, [10] and attempted to form an alliance with the On Air Pirates and Hawkins Pirates to challenge the Red Hair Pirates once more, but it was eventually disbanded due to an encounter with another Emperor, Kaidou.
+                        
+                        Kid was originally introduced with a bounty of Beli.png315,000,000, largely due to a high number of civilian casualties caused by him and his crew, thus exceeding Luffy's when they first arrived at the Sabaody Archipelago.[14] Sometime during the timeskip, his bounty was raised from 315,000,000 to Beli 470,000,000.[3] Kid's bounty was eventually raised to Beli.png3,000,000,000 for his role in defeating Big Mom of the Four Emperors alongside Trafalgar Law during the Wano Country Arc.
+                        
+                        Kid and his crew briefly join forces with the Straw Hat Pirates and Heart Pirates during the Sabaody Archipelago Arc. He also becomes an ally member of the Ninja-Pirate-Mink-Samurai Alliance during the Wano Country Arc.</b></p>
+               
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

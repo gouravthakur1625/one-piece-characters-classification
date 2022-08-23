@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Robin</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color:white;
+            font-family: "Brush Script MT", cursive;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/robin_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color:white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-left: 250px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/robin.png' )}}" alt="User Image" style="width:250px;height:350px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    
+                    <h3 font-family:'Courier New';><b>Full Name:- Nico Robin</b></h2>
+                        <h3>Bounty:- 130 Million</h3>
+                        <h3>Nick Name:-  Devil Child</h3>
+                        <h3>Devil Fruit:- Hana Hana no Mi (Flower Flower Fruit)</h3>
+                    
+                        <h3>Position:- Straw Hat Pirates Archaeologist</h3>
+					
+					<p style="color:white;"><b>Nico Robin,[1] also known by her epithet "Devil Child"[6] and the "Light of the Revolution",[7] is the archaeologist of the Straw Hat Pirates. She is the seventh member of the crew and the sixth to join, doing so at the end of the Arabasta Arc. She temporarily left the crew during the Water 7 Arc but rejoined during the Enies Lobby Arc.
+
+                        Robin ate the Hana Hana no Mi at a young age, giving her the power to reproduce her body parts (or her entire body) on any surface at will. As the sole survivor of the destroyed West Blue island Ohara, she is currently one of only two people in the world known to have the ability to read and decipher Poneglyphs, a skill which is considered forbidden and threatening to the World Government.
+                        
+                        She acted as the vice president of Baroque Works as "Miss All Sunday",[2] serving and partnering herself directly with the organization's president; the ex-Warlord: Crocodile, who operated under the codename "Mr. 0". She was a secondary antagonist of the Arabasta Saga, before joining the Straw Hats. Her dream is to find the Rio Poneglyph which tells the true history of the world, specifically the Void Century.
+                        
+                        She gained a bounty of Beli.png79,000,000 at the age of 8 due to her ability to read poneglyphs after the destruction of Ohara, it later increased to Beli.png80,000,000 after the Straw Hats invaded Enies Lobby to rescue her and escape. She currently has a bounty of Beli.png130,000,000.</b></p>
+               
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

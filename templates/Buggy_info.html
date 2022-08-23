@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Buggy</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+    body{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/buggy.jpg' )}}" alt="User Image" style="width:500px;height:750px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Buggy</b></h2>
+                    <h3>Father:- Unknown</h3>
+                    <h3>Bounty:- 15 Million</h3>
+                    <h3>Nick Name:- Star Clown Buggy</h3>
+                    <h3>Devil Fruit:- Bara Bara no Mi(Chop Chop fruit)</h3>
+                    <h3>Position:- Emperor of Sea , Cross Guild</h3>
+					
+					<p style = "color: white;"><b>Buggy the Star Clown is the captain of the Buggy Pirates as well as the co-leader of the Buggy and Alvida Alliance, and a former apprentice of the Roger Pirates. Shortly after the Summit War of Marineford, he became a member of the Seven Warlords of the Sea and the leader of the pirate dispatch organization "Buggy's Delivery". He later lost his Warlord title when the Seven Warlords system dissolved, but was then recognized as one of the Four Emperors following the downfalls of Kaidou and Big Mom and became a founding member of the Cross Guild, acting as its overall leader.
+
+                        He is the main antagonist of the Orange Town Arc and can be considered the secondary antagonist of the Loguetown Arc. He has since become a highly recurring character in the series. Buggy is also the central character from Buggy's Crew Adventure Chronicles Cover Page Serial. Despite his rivalry with Luffy, he temporarily became one of his main allies during the Impel Down and Marineford Arcs.
+                        
+                        He is also the main antagonist in most episodes of "Boss Luffy Historical Special". He also serves as a help to Luffy in the 3D2Y special episode, and the movie One Piece: Stampede.</b></p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Chopper</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            font-family: "Brush Script MT", cursive;
+        }
+    body{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/chopper_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/chopper.jpg' )}}" alt="User Image" style="width:500px;height:750px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Tony Tony Chopper</b></h2>
+                    <h3>Father:- Unknown</h3>
+                    <h3>Bounty:- 100</h3>
+                    <h3>Nick Name:- Cotton Candy Lover</h3>
+                    <h3>Devil Fruit:- Hito Hito no Mi (Human Human Fruit)</h3>
+                    <h3>Position:- Straw Hat Pirates, Doctor</h3>
+					
+					<p><b>Tony Tony Chopper, also known as "Cotton Candy Lover" Chopper,is the doctor of the Straw Hat Pirates. He is the sixth member of the crew and the fifth to join, doing so at the end of the Drum Island Arc. He was temporarily forced to join the Foxy Pirates during the Long Ring Long Land Arc, but was quickly returned to Luffy's crew.
+
+                        Chopper is a reindeer that ate the Hito Hito no Mi, a Devil Fruit that allows its user to transform into a human hybrid or a human at will. He came from Drum Island and was taught how to be a doctor by his two parental figures, Doctors Hiriluk and Kureha. His dream is to one day become a doctor capable of curing any disease and wants to travel all across the world specifically in the hopes of accomplishing this dream.
+                        
+                        He gain a bounty of Beli.png50 due to being mistaken for the crew's pet after the Enies Lobby Incident and currently has a bounty of Beli.png100</b></p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Law</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+        h3{
+            color:white;
+            font-family: "Brush Script MT", cursive;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/law_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color:white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/law.jpg' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h3 font-family:'Courier New';><b>Full Name:- Trafalgar D. Water Law</b></h2>
+                        <h3>Bounty:- 3 Billion</h3>
+                        <h3>Nick Name:- Surgeon of Death</h3>
+                        <h3>Devil Fruit:- Ope Ope no Mi</h3>
+                        <h3>Power:- Armament Haki, Observation Haki</h3>
+                        <h3>Position:- Former Warlord, Heart Pirates Captain</h3>
+                        <p style="color:white;"><b>Trafalgar D. Water Law,[17] more commonly known as just Trafalgar Law (トラファルガー・ロー Torafarugā Rō?) and by his epithet as the "Surgeon of Death", is a pirate from North Blue and the captain and doctor of the Heart Pirates.[1][6] He is one of twelve pirates who are referred to as the "Worst Generation".[1][18] He became one of the Seven Warlords of the Sea during the timeskip,[2] but his position was revoked for allying with the Straw Hat Pirates.[13] Law, like many other pirates, dreams of finding the One Piece, while also desiring to know the purpose of the Will of D..[19][20]
+
+                            Law is the only known survivor of Flevance, a town whose inhabitants suffered from a condition known as Amber Lead Syndrome. Because the disease was fatal and poorly understood, Flevance was destroyed by neighboring countries out of fear, with a young Law barely escaping alive.[7] He subsequently joined the Donquixote Pirates, where Donquixote Doflamingo intended to make Law one of his executive officers.[17] However, thanks to the efforts of Doflamingo's brother, Rosinante, Law was freed from the Donquixote Pirates' influence and became a pirate set to bring down Doflamingo's empire.
+                            
+                            During the timeskip, his bounty increased from Beli.png200,000,000[1] to Beli.png440,000,000[2], before it was frozen due to his induction into the Seven Warlords of the Sea. However, after having his title revoked during the events of the Dressrosa Arc, Law's bounty was reinstated and raised to Beli.png500,000,000.[13] Eventually, his bounty would be raised to Beli.png3,000,000,000 for his role in taking down Big Mom of the Four Emperors alongside Eustass Kid during the Wano Country Arc.
+                            
+                            Law joins forces with the Straw Hat Pirates for a brief moment during the Sabaody Archipelago Arc and later on saves Luffy's life at the very end of the Marineford Arc. He is one of the central allies of the Straw Hat Pirates during the Dressrosa, Whole Cake Island, and Wano Country Sagas. He also acts as an ally of the Straw Hat Pirates during the movie One Piece: Stampede.</b></p>                   
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

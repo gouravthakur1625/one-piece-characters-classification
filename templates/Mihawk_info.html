@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Mihawk</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+        h3{
+            color:white;
+            font-family: "Brush Script MT", cursive;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color:white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/mihawk.jpg' )}}" alt="User Image" style="width:500px;height:500px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h3 font-family:'Courier New';><b>Full Name:- Dracule Mihawk</b></h2>
+                        <h3>Bounty:- Unknown</h3>
+                        <h3>Nick Name:- Hawk Eyes Mihawk, Strongest Swordsman in the World</h3>
+                        <h3>Devil Fruit:- None</h3>
+                        <h3>Power:- Unknown</h3>
+                        <h3>Position:- Former Warlord, Strongest Swordsman in the World</h3>
+                        <p style="color:white;"><b>Dracule "Hawk Eyes" Mihawk is a world-famous pirate who holds the title of "Strongest Swordsman in the World". He was one of the Seven Warlords of the Sea, the first revealed and formally introduced, until the group's dissolution.[3][4] Defeating him is Roronoa Zoro's current goal.
+
+                            Mihawk's place of residence is Kuraigana Island, on which he served during the two-year timeskip as Zoro's master in his swordsmanship training.[13][14] He currently serves as a member of the Cross Guild along with fellow ex-Warlord Buggy of the Four Emperors.[15]
+                            
+                            Mihawk can be considered a supporting antagonist of the Baratie Arc and one of the major antagonists in the Marineford Arc, where he took part in the Summit War of Marineford on the side of the Marines, along with most of the other Warlords of the Sea.[16]</b></p>                   
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

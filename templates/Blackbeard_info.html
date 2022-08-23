@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Blackbeard</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h3{
+            color: white;
+            font-family: "Brush Script MT", cursive;
+        }
+    body{
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: fixed;
+    }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem;color: white;">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/blackbeard.jpg' )}}" alt="User Image" style="width:500px;height:750px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    <h3 font-family:'Courier New';><b>Full Name:- Marshall D. Teach</b></h2>
+                    <h3>Father:- Unknown</h3>
+                    <h3>Bounty:- 2.24 Billion</h3>
+                    <h3>Nick Name:- Blackbeard</h3>
+                    <h3>Devil Fruit:- Yami Yami no Mi (Dark Dark Fruit), Gaura Gaura no Mi (Tremor-Tremor Fruit)</h3>
+                    <h3>Power:- Unknown</h3>
+                    <h3>Position:- Emperor of the Sea, Captain of Blackbeard Pirates</h3>
+					
+					<p style="color: white;"><b>Marshall D. Teach, most commonly referred to by his epithet Blackbeard, is the captain-turned-admiral of the Blackbeard Pirates, currently one of the Four Emperors. He is also the only known person in history to wield the powers of two Devil Fruits.
+
+                        He started out his pirate career as an apprentice of the Whitebeard Pirates, then later became a member of the crew's 2nd division. However, he defected after murdering Thatch, the 4th division commander, in order to steal the Yami Yami no Mi. Prior to the two-year timeskip, he briefly held a position among the Seven Warlords of the Sea after defeating and handing Ace over to the Marines, before resigning upon returning from Impel Down with Level Six prisoners to strengthen his crew. His actions resulted in him being considered a part of the Worst Generation along with the Eleven Supernovas, and he received the title of Emperor after slaying Whitebeard during the Summit War of Marineford and stealing his Gura Gura no Mi power, and for also defeating the Whitebeard Pirates during the timeskip and taking the majority of Whitebeard's territories, with the island of Hachinosu acting as his base of operations.
+                        
+                        Due to his actions, he can be considered a minor antagonist during the Jaya and Post-Enies Lobby Arcs, the tertiary antagonist of the Impel Down Arc, and one of the main antagonists of the Marineford Arc, the Summit War Saga, and the remainder of the One Piece series.</b></p>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Whitebeard</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+        h3{
+            font-family: "Brush Script MT", cursive;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/whitebeard_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/Edward Newgate.png' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h3 font-family:'Courier New';><b>Full Name:- Edward Newgate</b></h2>
+                        <h3>Bounty:- 5.04 Billion</h3>
+                        <h3>Nick Name:- Strongest Man in the World, Whitebeard</h3>
+                        <h3>Devil Fruit:- Gura Gura no Mi (Tremor-Tremor Fruit)</h3>
+                        <h3>Power:- Advance Armament Haki, Advance Observation Haki, Advance Conqueror's Haki</h3>
+                        <h3>Position:- Former Emperor of the Sea, </h3>
+                        <p><b>Edward Newgate,[12] more commonly known as "Whitebeard", was the captain of the Whitebeard Pirates and was widely known as the "Strongest Man in the World" and, after Gol D. Roger's death, the "Man Closest to One Piece".[7]
+
+                            Before forming his own crew, Newgate was an orphan hailing from the island of Sphinx. During his tenure as a pirate, he was a known member of the legendary Rocks Pirates and later in life became part of the Four Emperors that rule over the New World,[5][4] before his death in the Summit War of Marineford.[13]
+                            
+                            In his prime, Whitebeard was a rival to Gol D. Roger, and following Roger's death, was widely recognized as the strongest man in the world, a fact complimented by having the highest active bounty whilst alive, and the second highest bounty of any pirate in history.
+                            
+                            He was an ally of Monkey D. Luffy and a central figure overall during the Marineford Arc.</b></p>                   
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

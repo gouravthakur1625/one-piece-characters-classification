@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Sabo</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+        h3{
+            font-family: "Brush Script MT", cursive;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/sabo_back.png')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/sabo.jpg' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h3 font-family:'Courier New';><b>Full Name:- Sabo</b></h2>
+                        <h3>Bounty:- 602 Million</h3>
+                        <h3>Nick Name:- Flame Emperor</h3>
+                        <h3>Devil Fruit:- Mera Mera no Mi (Flame Flame Fruit)</h3>
+                        <h3>Power:- Armament Haki, Observation Haki</h3>
+                        <h3>Position:-  Revolutionary Army's chief of staff</h3>
+                        <p><b>"Flame Emperor" Sabo[9] is the Revolutionary Army's chief of staff, recognized as the No. 2 of the entire organization and outranked only by Supreme Commander Monkey D. Dragon.[2] He is also the sworn brother of the notorious pirates Monkey D. Luffy and the late Portgas D. Ace.[10]
+
+                            Raised in nobility by Outlook III and Didit in the Goa Kingdom, Sabo ran away at the age of 10 with the intention of becoming a pirate and writing a book about his travels, and met Ace and Luffy while living as a vagabond in Gray Terminal.[10] He tried to set sail just a few months afterward to get away from his family, but had his ship destroyed by the World Noble Saint Jalmack.[11] He was saved by Dragon but lost his memory in the process, and so devoted his life to the service of the Revolutionary Army. However, his memories would return 10 years later after hearing about Ace's death.[12] Two years after regaining his memories, Sabo would reunite with Luffy and also carry Ace's legacy by consuming his Devil Fruit, the Mera Mera no Mi.[13] He currently has a bounty of Beli.png602,000,000.
+                            
+                            He acts as an ally of Luffy during the Dressrosa Arc, as well as the movies One Piece Film: Gold and One Piece: Stampede.</b></p>                   
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

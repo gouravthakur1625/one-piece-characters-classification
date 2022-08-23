@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Roger</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+        h3{
+            font-family: "Brush Script MT", cursive;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/roger_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/roger.jpg' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h3 font-family:'Courier New';><b>Full Name:- Gol D Roger</b></h2>
+                        <h3>Bounty:- 5.56 Billion</h3>
+                        <h3>Nick Name:- Pirate King, Gold Roger</h3>
+                        <h3>Devil Fruit:-None</h3>
+                        <h3>Power:- Advance Armament Haki, Advance Observation Haki, Advance Conqueror's Haki</h3>
+                        <h3>Position:- Pirate King, Captain of Roger Pirates</h3>
+                        <p><b>Gol D. Roger, more commonly known as Gold Roger, was a legendary pirate who, as captain of the Roger Pirates, held the title of Pirate King and owned the legendary treasure known as One Piece.[1] He was also the lover of Portgas D. Rouge and the biological father of Portgas D. Ace.[8]
+
+                            Roger was famed as the man who did what no one thought possible — he conquered the Grand Line and amassed a vast fortune. Afterwards, knowing that he would soon die from an incurable disease, Roger disbanded his crew before turning himself in to be executed. The World Government intended to have Roger be publicly executed to discourage piracy, but his last words had the opposite impact. He stated that anyone who can find his treasure can claim it. As such, this made Roger single-handedly responsible for starting the Golden Age of Pirates.</b></p>                   
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

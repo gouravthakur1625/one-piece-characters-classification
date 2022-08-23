@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Franky</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-attachment: fixed;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/franky_back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">One Piece Characters and their power</h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/franky.jpg' )}}" alt="User Image" style="width:500px;height:700px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+                    
+                    <h3 font-family:'Courier New';><b>Full Name:- Cutty Flam</b></h2>
+                        <h3>Bounty:- 94 Million</h3>
+                        <h3>Nick Name:-  Cyborg</h3>
+                        <h3>Devil Fruit:- No </h3>
+                        <h3>Position:- Straw Hat Pirates, Shipwright</h3>
+					
+					<p><b>"Iron Man" Franky[17][5] is the shipwright of the Straw Hat Pirates. He is the crew's eighth member and the seventh to join, doing so at the end of the Post-Enies Lobby Arc.[18]
+
+                        Born "Cutty Flam",[19] he chose to go by his nickname of "Franky" until eventually permanently discarding his true name per the request of Iceburg to hide his identity.[20] Originally from the South Blue,[21] Franky was abandoned by his family as a four-year-old, eventually making his way to Water 7. There, he came to be a member of Tom's Workers, until an incident resulted in his body being heavily damaged and requiring him to augment himself into a cyborg. Upon returning to Water 7, he became the leader of the Franky Family, a group of ship dismantlers and bounty hunters.[2]
+                        
+                        Franky and his followers were originally enemies of the Straw Hats at the beginning of the Water 7 Arc, until circumstances forced them to become allies at the end of the same arc and the Enies Lobby Arc. Franky's dream is to create a ship and circumnavigate the world with it, and he built the Thousand Sunny and joined the Straw Hat Pirates to fulfill his dream.
+                        
+                        He gain a bounty of Beli44,000,000 for his involvement at the Enies Lobby Incident and burning the Blueprints containing Pluton and currently has a bounty of Beli94,000,000.</b></p>
+               
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
