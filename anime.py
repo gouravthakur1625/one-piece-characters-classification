@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 
-filepath = 'E:/Anime project/model_anime2.h5'
+filepath = 'E:/Anime project/model_animeV2.h5'
 
 model = load_model(filepath)
 print(model)
